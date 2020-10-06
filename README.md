@@ -24,7 +24,7 @@ Nesse sistema, o líder de um squad deve poder escolher seu squad pelo nome, con
 
 Além disso, o líder do squad também deve poder consultar a relação de todas as metas de processos seletivos ativos.  
 
-##Instalação
+## Instalação
 
 Para rodar esse projeto, é necessário ter:
 - Composer;
