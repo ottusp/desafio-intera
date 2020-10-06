@@ -31,4 +31,12 @@ Para rodar esse projeto, é necessário ter:
 - Rode o comando ``php artisan key:generate``;
 - Faça as migrations com o comando ``php artisan migrate``;
 - Rode o projeto na máquina local com o comando ``php artisan serve``;
-- [Extra] Para copular o banco de dados com exemplos, acesse a url <b>localhost:8000/bootstrap</b>. Isso deverá rodar o script que lê os dados de uma planilha e copula o banco.
+
+## Rotas úteis
+
+- <b>/bootstrap</b>
+  - Copula o banco de dados com os dados da planilha em resources/spreadsheet/processos.csv;
+- <b>/</b>
+  - Acesso ao sistema
+
+As outras URLs úteis podem ser acessadas pela navegação do sistema.
