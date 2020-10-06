@@ -8,6 +8,14 @@
     <title>@yield('title', 'Intera')</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
+
+    <link rel="stylesheet" href="{{ asset('styles/classes.css') }}">
+
+
+    <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
 
     @yield('styles')
 
@@ -15,8 +23,13 @@
 
     @yield('imports')
 
+    <link rel="stylesheet" href="{{ asset('styles/navbar.css') }}">
+
 </head>
 <body>
+
+    @include('partials.navbar')
+
     @yield('content')
 </body>
 </html>

@@ -33,8 +33,7 @@ class Processo extends Model
     }
 
     public function getDiaDeEntregaAttribute() {
-
-        $date = \DateTime::createFromFormat('Y/m/d', $this->data_de_entrega);
+        $date = new \DateTime($this->data_de_entrega);
         return $date->format('d/m/Y');
     }
 }

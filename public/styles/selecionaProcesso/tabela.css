@@ -1,0 +1,32 @@
+#tabela {
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#tabela .tabela-button.intera-button {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+
+    padding: .5rem;
+}
+
+#tabela .tabela-button.intera-button:hover {
+    background-color: black;
+    color: white;
+}
+
+#tabela th {
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+    color: black;
+
+    font-weight: 700;
+}
+
+#tabela td {
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+}
+
+#tabela td.celula-sem-borda {
+    border: none;
+}

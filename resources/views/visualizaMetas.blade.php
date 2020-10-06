@@ -62,7 +62,7 @@
 
             <div class="botoes-container">
                 <div class="botao-container">
-                    <button form="filtro-form">Filtrar</button>
+                    <button form="filtro-form">Ordenar</button>
                 </div>
 
                 <div class="botao-container">

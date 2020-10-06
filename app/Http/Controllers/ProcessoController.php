@@ -65,6 +65,25 @@ class ProcessoController extends Controller
         return view('selecionaProcesso', compact('squad', 'processos', 'possiveisDatasDeEntrega'));
     }
 
+    public function ordenaMetas() {
+        $required = request()->validate([
+            'squadId' => 'required|integer',
+            'ordenarPor' => 'required',
+        ]);
+
+
+        $processos = Processo::where('squad_id', $required['squadId'])
+            ->where('is_ativo', true)
+            ->where('tem_meta', true)
+            ->orderBy($required['ordenarPor'])
+            ->get();
+
+        $squad = Squad::find($required['squadId']);
+
+        return view('visualizaMetas', compact('squad', 'processos'));
+
+    }
+
     public function getProcessosAtivosBySquad() {
         $data = request()->validate([
             'squad' => 'required',
@@ -80,6 +99,7 @@ class ProcessoController extends Controller
 
         $processos = Processo::where('squad_id', $squad->id)
             ->where('is_ativo', true)
+            ->where('tem_meta', false)
             ->orderBy('nome_da_empresa')
             ->get();
 

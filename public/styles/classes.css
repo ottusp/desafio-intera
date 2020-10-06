@@ -1,0 +1,52 @@
+::-moz-selection { /* Firefox */
+    color: white;
+    background: black;
+}
+
+::selection {
+    color: white;
+    background: black;
+}
+
+.intera-button {
+    padding: .8rem;
+
+    background-color: black;
+    color: white;
+
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+
+    border: 1px solid white;
+
+    cursor: pointer;
+
+    width: 100%;
+}
+
+.intera-button:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+.intera-button:focus {
+    outline: none;
+}
+
+.intera-input {
+    background-color: #DDDDDD;
+    border: none;
+
+    padding: .8rem;
+
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+
+    width: 100%;
+}
+
+.intera-input:focus {
+    outline: none;
+}

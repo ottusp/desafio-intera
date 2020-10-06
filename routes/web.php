@@ -24,6 +24,6 @@ Route::get('/squadMetas', 'SquadController@squadMetas');
 
 Route::get('/filtroProcessos', 'ProcessoController@filtroProcessos');
 
-Route::get('/ordenaMetas', 'ProcessoController@filtroProcessos');
+Route::get('/ordenaMetas', 'ProcessoController@ordenaMetas');
 
 Route::post('/storeMeta', 'ProcessoController@storeMeta');

@@ -6,7 +6,7 @@
         left: 0;
         right: 0;
 
-        z-index: 50;
+        z-index: 60;
 
         display: flex;
         align-items: center;

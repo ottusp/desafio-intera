@@ -1,0 +1,23 @@
+#pesquisa-squad #main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10vh;
+}
+
+#pesquisa-squad .escolha-squad-container {
+    text-align: center;
+}
+
+#pesquisa-squad .title {
+    font-family: 'Open-sans', sans-serif;
+    font-size: 2.5rem;
+
+    color: black;
+
+    margin-bottom: 2rem;
+}
+
+#pesquisa-squad .input-container {
+    margin-bottom: 1rem;
+}

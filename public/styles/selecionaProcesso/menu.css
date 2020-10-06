@@ -1,0 +1,76 @@
+#menu {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+
+#menu .content {
+    display: flex;
+
+    justify-content: space-between;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid black;
+}
+
+#menu .squad-name {
+    font-size: 1rem;
+    font-weight: 700;
+    color: black;
+
+    margin-bottom: 1rem;
+}
+
+#menu .clickable-filters-container {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 1rem;
+}
+
+#menu .clickable-filters-container div+div {
+    margin-left: 2rem;
+}
+
+#menu #ordenar-por {
+    background-color: white;
+    font-family: Montserrat, sans-serif;
+
+    padding: .4rem;
+    border: 1px solid black;
+}
+
+#menu #ordenar-por:focus {
+    outline: none;
+}
+
+#menu #ordenar-por option {
+    background-color: white;
+    color: black;
+
+    font-family: Montserrat, sans-serif;
+}
+
+#menu .botao-container {
+    width: 10rem;
+}
+
+#menu #consultar-metas-form {
+    display: flex;
+    align-items: flex-end;
+    text-align: end;
+}
+
+#menu .menu-button.intera-button {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+
+    padding: .5rem;
+}
+
+#menu .menu-button.intera-button:hover {
+    background-color: black;
+    color: white;
+}

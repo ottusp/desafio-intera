@@ -1,0 +1,31 @@
+#modal {
+    color: black;
+    font-family: Montserrat, sans-serif;
+}
+
+#modal .modal-card-title {
+    color: black;
+}
+
+#modal .modal-card-body td {
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+#modal .modal-card-body td + td {
+    text-align: end;
+}
+
+#modal .info-container + .info-container {
+    margin-top: .6rem;
+}
+
+#modal .intera-input {
+    width: auto;
+    text-align: end;
+}
+
+#modal #data_de_entrega.intera-input {
+    margin-left: 1rem;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, .2);
+}

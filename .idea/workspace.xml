@@ -18,6 +18,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Blade" />
+        <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -144,6 +146,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -151,8 +154,13 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ottof\Documents\codigos\projetos\Desafio-Intera\DesafioIntera\public\styles\selecionaProcesso" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -172,7 +180,7 @@
       <workItem from="1601734880698" duration="6423000" />
       <workItem from="1601755708276" duration="28341000" />
       <workItem from="1601896631585" duration="27650000" />
-      <workItem from="1601985388729" duration="8454000" />
+      <workItem from="1601985388729" duration="25245000" />
     </task>
     <servers />
   </component>
@@ -184,13 +192,17 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="493" y="243" key="#Composer/0.0.1366.728@0.0.1366.728" timestamp="1601640353389" />
-    <state x="184" y="9" key="SettingsEditor" timestamp="1601851327454">
+    <state x="310" y="131" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog" timestamp="1601997316401">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="184" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1601851327454" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1601994574453">
+    <state x="310" y="131" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog/0.0.1366.728@0.0.1366.728" timestamp="1601997316401" />
+    <state x="184" y="9" key="SettingsEditor" timestamp="1602014244601">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1601994574453" />
+    <state x="184" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1602014244601" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1602014218242">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1602014218242" />
   </component>
 </project>
