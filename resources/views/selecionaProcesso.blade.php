@@ -1,9 +1,9 @@
 @extends('baseTemplate')
 
 @section('imports')
-    <link rel="stylesheet" href="{{ asset('styles/selecionaProcesso/menu.css') }}">
-    <link rel="stylesheet" href="{{ asset('styles/selecionaProcesso/tabela.css') }}">
-    <link rel="stylesheet" href="{{ asset('styles/selecionaProcesso/modal.css') }}">
+    <link rel="stylesheet" href="{{ asset('styles/menu.css') }}">
+    <link rel="stylesheet" href="{{ asset('styles/tabela.css') }}">
+    <link rel="stylesheet" href="{{ asset('styles/modal.css') }}">
 
     <script defer src="{{ asset('scripts/selecionaProcesso.js') }}"></script>
 @endsection
@@ -36,8 +36,8 @@
 
 @section('content')
 
-    @if(session('erro'))
-        @include('partials.popUpErro')
+    @if($errors->any())
+        @include('partials.popUpErro', array('errors' => $errors))
     @endif
 
     <section id="menu" class="section">
@@ -84,7 +84,7 @@
 
             </form>
 
-            <form id="consultar-metas-form" action="/squadMetas" method="get">
+            <form id="consultar-metas-form" class="muda-pagina-form" action="/squadMetas" method="get">
                 <input name="squadId" value="{{ $squad->id }}" hidden>
                 <div class="botao-container">
                     <button id="consultar-metas-button" class="intera-button menu-button" >

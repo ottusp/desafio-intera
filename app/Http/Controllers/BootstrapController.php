@@ -123,7 +123,7 @@ class BootstrapController extends Controller
     }
 
     private function carregaRelacoes() {
-        $path = '..\..\processos.csv';
+        $path = '..\resources\spreadsheet\processos.csv';
         $linhasCsv = $this->carregaCsv($path);
 
         $this->dadosCsv = $linhasCsv;

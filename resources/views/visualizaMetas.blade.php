@@ -1,79 +1,65 @@
 @extends('baseTemplate')
 
-@section('styles')
+@section('imports')
 
-    <style>
-        #barra-de-navegacao {
-            display: block;
-
-            padding-bottom: 1rem;
-
-            border-bottom: 1px solid grey;
-        }
-
-        .campo-linha-inteira {
-            width: 100%;
-        }
-
-        .botoes-container {
-            display: flex;
-        }
-
-        .botao-container {
-            text-align: end;
-        }
-    </style>
+    <link rel="stylesheet" href="{{ asset('styles/menu.css') }}">
+    <link rel="stylesheet" href="{{ asset('styles/tabela.css') }}">
 
 @endsection
 
+
 @section('content')
-    <section id="barra-de-navegacao" class="section">
+
+    <section id="menu" class="section">
         <div class="content">
             <form id="filtro-form"
                   action="/ordenaMetas" method="get">
 
-                <div class="squad-container">
+                <div class="squad-name">
                     Squad: {{ $squad->nome }}
                     <input name="squadId" value="{{ $squad->id }}" hidden>
                 </div>
 
-                <div id="ordenar-por-container">
-                    <label class="campo-linha-inteira" for="ordenar-por">
-                        Ordenar por
+                <div class="clickable-filters-container">
+                    <div id="ordenar-por-container">
+                        <label for="ordenar-por">
+                            Ordenar por
 
-                        <select name="ordenarPor" id="ordenar-por">
-                            <option value="nome_da_empresa" selected>Empresa</option>
-                            <option value="nome_da_vaga">Nome da vaga</option>
-                            <option value="data_de_entrega">Data de entrega</option>
-                            <option value="inscricoes">Incrições</option>
-                            <option value="entrevistas">Entrevistas</option>
-                            <option value="aprovados">Aprovados</option>
-                        </select>
-                    </label>
+                            <select name="ordenarPor" id="ordenar-por">
+                                <option value="nome_da_empresa" selected>Empresa</option>
+                                <option value="nome_da_vaga">Nome da vaga</option>
+                                <option value="inscricoes">Incrições</option>
+                                <option value="entrevistas">Entrevistas</option>
+                                <option value="aprovados">Aprovados</option>
+                                <option value="data_de_entrega">Data de entrega</option>
+                            </select>
+                        </label>
+                    </div>
+
+                </div>
+
+                <div class="botao-container">
+                    <button form="filtro-form" class="intera-button">Aplicar</button>
                 </div>
 
                 @csrf
 
             </form>
 
-            <form id="consultar-processos-form" action="/processos" method="get">
+            <form id="consultar-processos-form" class="muda-pagina-form" action="/processos" method="get">
                 <input name="squad" value="{{ $squad->nome }}" hidden>
+                <div class="botao-container">
+                    <button id="consultar-metas-button" class="intera-button menu-button" >
+                        Consultar processos
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
             </form>
-
-            <div class="botoes-container">
-                <div class="botao-container">
-                    <button form="filtro-form">Ordenar</button>
-                </div>
-
-                <div class="botao-container">
-                    <button form="consultar-processos-form">Consultar processos</button>
-                </div>
-            </div>
 
         </div>
     </section>
 
-    <section class="section">
+    <section id="tabela" class="section">
         <div class="content">
             @if(count($processos->modelKeys()) == 0)
                 <div id="nao-ha-processos-container">
@@ -81,7 +67,7 @@
                 </div>
             @else
                 <table>
-                    <tr>
+                    <tr id="header-row">
                         <th>Empresa</th>
                         <th>Vaga</th>
                         <th>Inscrições</th>

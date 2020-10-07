@@ -53,10 +53,10 @@
 }
 
 #menu .botao-container {
-    width: 10rem;
+    width: 11rem;
 }
 
-#menu #consultar-metas-form {
+#menu .muda-pagina-form {
     display: flex;
     align-items: flex-end;
     text-align: end;

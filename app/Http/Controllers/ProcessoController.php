@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\MetaRequest;
 use App\Models\Processo;
 use App\Models\Squad;
 use DateTime;
@@ -10,16 +11,11 @@ use Illuminate\Http\Request;
 class ProcessoController extends Controller
 {
 
-    public function storeMeta() {
+    public function storeMeta(MetaRequest $metaRequest) {
 
         $processoId = request()->validate(['processo_id' => 'required|integer']);
 
-        $data = request()->validate([
-            'inscricoes' => 'required',
-            'entrevistas' => 'required',
-            'aprovados' => 'required',
-            'data_de_entrega' => 'required'
-        ]);
+        $data = $metaRequest->validated();
 
         $processo = Processo::find($processoId)->first();
 
@@ -134,7 +130,7 @@ class ProcessoController extends Controller
             $sextas[] = $proximaSexta->add($intervalo)->format('d/m/Y');
         }
 
-        return $sextas;
+        return array_reverse($sextas);
     }
 
     private function getProximaSexta() {

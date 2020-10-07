@@ -1,0 +1,23 @@
+#pop-up-container {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    z-index: 60;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#pop-up-container #pop-up {
+    position: absolute;
+
+    max-width: 50rem;
+}
+
+#pop-up-container .message-body {
+    border: none;
+}

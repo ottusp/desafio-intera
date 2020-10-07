@@ -3,8 +3,41 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="a509162c-f296-4fb0-b02f-22bd3cf88e6c" name="Default Changelist" comment="" />
+    <list default="true" id="a509162c-f296-4fb0-b02f-22bd3cf88e6c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/MetaRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/intera-logo-pequena.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/styles/pop-up.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BootstrapController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BootstrapController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProcessoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProcessoController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/styles/selecionaProcesso/menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/styles/menu.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/styles/selecionaProcesso/modal.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/styles/modal.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/styles/selecionaProcesso/tabela.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/styles/tabela.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/baseTemplate.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/baseTemplate.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/popUpErro.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/popUpErro.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/selecionaProcesso.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/selecionaProcesso.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/visualizaMetas.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/visualizaMetas.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,6 +55,9 @@
         <option value="CSS File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/package.json" />
@@ -138,11 +174,15 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1iJystZqFXMeUGsRCD5Ha05moRy" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -159,6 +199,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ottof\Documents\codigos\projetos\Desafio-Intera\public\styles" />
       <recent name="C:\Users\ottof\Documents\codigos\projetos\Desafio-Intera\DesafioIntera\public\styles\selecionaProcesso" />
     </key>
   </component>
@@ -180,12 +221,29 @@
       <workItem from="1601734880698" duration="6423000" />
       <workItem from="1601755708276" duration="28341000" />
       <workItem from="1601896631585" duration="27650000" />
-      <workItem from="1601985388729" duration="25245000" />
+      <workItem from="1601985388729" duration="26471000" />
+      <workItem from="1602021324798" duration="88000" />
+      <workItem from="1602021472202" duration="148000" />
+      <workItem from="1602021622900" duration="5019000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="493" y="243" key="#Composer" timestamp="1601640353389">
@@ -196,6 +254,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="310" y="131" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog/0.0.1366.728@0.0.1366.728" timestamp="1601997316401" />
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1602021619563">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1602021619563" />
     <state x="184" y="9" key="SettingsEditor" timestamp="1602014244601">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
